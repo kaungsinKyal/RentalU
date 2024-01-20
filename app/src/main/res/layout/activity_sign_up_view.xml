@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpView"
+    android:orientation="vertical"
+    android:background="@color/backgroundApp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@mipmap/logoapp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logo"
+            android:layout_margin="8dp"
+            >
+
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Sign Up"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:textColor="@color/textColor">
+
+        </TextView>
+
+        <!-- Your content for the first RelativeLayout goes here -->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_margin="6dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FullName"
+            android:textSize="15sp"
+            android:id="@+id/inputFullName"
+            android:inputType="text"
+            android:textColor="@color/editTextColorText"
+            android:background="@color/editTextBackground"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/editTextColorText">
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textSize="15sp"
+            android:id="@+id/inputUsername"
+            android:layout_below="@+id/inputFullName"
+            android:inputType="text"
+            android:textColor="@color/editTextColorText"
+            android:background="@color/editTextBackground"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/editTextColorText">
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="15sp"
+            android:id="@+id/inputPassword"
+            android:layout_below="@+id/inputUsername"
+            android:inputType="textPassword"
+            android:textColor="@color/editTextColorText"
+            android:background="@color/editTextBackground"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/editTextColorText">
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:id="@+id/inputConPassword"
+            android:layout_below="@id/inputPassword"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:textColor="@color/editTextColorText"
+            android:background="@color/editTextBackground"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/editTextColorText">
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="9-123-456-789"
+            android:id="@+id/inputPhone"
+            android:layout_below="@+id/inputConPassword"
+            android:textSize="15sp"
+            android:inputType="number"
+            android:textColor="@color/editTextColorText"
+            android:background="@color/editTextBackground"
+            android:layout_marginTop="5dp"
+            android:textColorHint="@color/editTextColorText">
+
+        </EditText>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="20sp"
+            android:id="@+id/btnSignUp"
+            android:layout_below="@+id/inputPhone"
+            android:background="@color/buttonBackground"
+            android:layout_marginTop="10dp">
+
+        </Button>
+        <!-- Your content for the second RelativeLayout goes here -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to login"
+            android:textSize="20sp"
+            android:id="@+id/btnGoToLogin"
+            android:layout_below="@+id/btnSignUp"
+            android:background="@color/buttonBackground"
+            android:layout_marginTop="5dp">
+
+        </Button>
+
+    </RelativeLayout>
+
+</LinearLayout>

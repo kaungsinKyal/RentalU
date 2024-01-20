@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundApp">
+
+    <ImageView
+        android:id="@+id/userProfile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/userFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@id/userProfile"
+        android:text="Full Name"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/userPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userFullName"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@id/userProfile"
+        android:text="Phone"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/divideLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/userProfile"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/PropertyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divideLine"
+        android:background="#26EF8B">
+
+        <ImageView
+            android:id="@+id/propertyImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/profilelogo">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/displayPropertyID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/propertyImage"
+            android:layout_marginTop="10dp"
+            android:text="Property ID:"
+            android:textSize="20sp"
+
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dataPropertyID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/propertyImage"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/displayPropertyID"
+            android:text="Data property"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/displayPropertyType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayPropertyID"
+            android:layout_marginTop="10dp"
+            android:text="Property Type:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dataPropertyType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/displayPropertyID"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/displayPropertyType"
+            android:text="Data property type"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/displayBedroomType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayPropertyType"
+            android:layout_marginTop="10dp"
+            android:text="Bedroom Type:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dataBedroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/displayPropertyType"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/displayBedroomType"
+            android:text="Data bedroom type"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/displayPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayBedroomType"
+            android:layout_marginTop="10dp"
+            android:text="Price Per Month: "
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dataPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayBedroomType"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/displayPrice"
+            android:text="data Price"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/displayFurniture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayPrice"
+            android:layout_marginTop="10dp"
+            android:text="Availabe Furniture: "
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dataFurniture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayPrice"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/displayFurniture"
+            android:text="data furniture"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/displayRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayFurniture"
+            android:layout_marginTop="10dp"
+            android:text="Remark:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dataRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/displayFurniture"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/displayRemark"
+            android:text="Remark"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/displayDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/displayRemark"
+            android:layout_marginTop="10dp"
+            android:text="Uploaded Date"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dataDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/displayRemark"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/displayDate"
+            android:text="date"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold"
+            android:layout_marginLeft="4dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/displayDate"
+            android:layout_marginTop="5dp"
+            android:background="#EF5C5C"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

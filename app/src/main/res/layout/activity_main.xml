@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#5CEA35">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:src="@mipmap/logoapp"
+        android:scaleType="centerCrop"
+        android:id="@+id/applogo"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Live Or To Rent"
+        android:textColor="@color/textColor"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+         android:layout_below="@+id/applogo"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHeader"
+        android:layout_marginTop="50dp"
+        android:progress="0"
+        android:max="100"
+        android:layout_centerHorizontal="true"
+
+        android:background="#5CEA35"/>
+
+
+
+</RelativeLayout>

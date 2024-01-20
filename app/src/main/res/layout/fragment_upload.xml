@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentViews.UploadFragment"
+    android:background="@color/backgroundApp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/UploadPhotoContainer">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/displayPhoto"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/profilelogo">
+
+                </ImageView>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select an image"
+                    android:id="@+id/btnSelectImage"
+                    android:layout_below="@+id/displayPhoto"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/buttonBackground">
+
+                </Button>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/UploadPhotoContainer"
+                android:id="@+id/FormContainer"
+                android:padding="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Property Type"
+                    android:id="@+id/inputPropertyType"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:textColor="@color/editTextColorText"
+                    android:background="@color/editTextBackground"
+                    android:textColorHint="@color/editTextColorText">
+
+                </EditText>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bedroom Type"
+                    android:id="@+id/inputBedroomType"
+                    android:layout_below="@+id/inputPropertyType"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/editTextColorText"
+                    android:background="@color/editTextBackground"
+                    android:textColorHint="@color/editTextColorText">
+
+                </EditText>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Price per month"
+                    android:id="@+id/inputPrice"
+                    android:layout_below="@id/inputBedroomType"
+                    android:inputType="numberDecimal"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/editTextColorText"
+                    android:background="@color/editTextBackground"
+                    android:textColorHint="@color/editTextColorText">
+
+                </EditText>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Available Furniture (Optional)"
+                    android:id="@+id/inputFurniture"
+
+                    android:layout_below="@+id/inputPrice"
+                    android:textSize="20sp"
+                    android:lines="4"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/editTextColorText"
+                    android:background="@color/editTextBackground"
+                    android:textColorHint="@color/editTextColorText">
+
+                </EditText>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Remark (Optional)"
+                    android:id="@+id/inputRemark"
+                    android:lines="4"
+                    android:layout_below="@id/inputFurniture"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/editTextColorText"
+                    android:background="@color/editTextBackground"
+                    android:textColorHint="@color/editTextColorText">
+
+                </EditText>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload post"
+                    android:textSize="15sp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btnUpload"
+                    android:layout_below="@id/inputRemark"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/buttonBackground">
+
+                </Button>
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+</RelativeLayout>

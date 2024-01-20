@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Property ID"
+        android:textSize="20sp"
+        android:id="@+id/editPropertyID">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Property Type"
+        android:textSize="20sp"
+        android:id="@+id/editPropertyTye"
+        android:layout_below="@id/editPropertyID">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Bedroom type"
+        android:textSize="20sp"
+        android:id="@+id/editBedroomType"
+        android:layout_below="@+id/editPropertyTye">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Price per month"
+        android:textSize="20sp"
+        android:id="@+id/editPrice"
+        android:layout_below="@+id/editBedroomType">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:hint="Furniture (Optional)"
+        android:textSize="20sp"
+        android:id="@+id/editFurniture"
+        android:layout_below="@+id/editPrice">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:hint="Remark (Optional)"
+        android:textSize="20sp"
+        android:id="@+id/editRemark"
+        android:layout_below="@+id/editFurniture">
+
+    </EditText>
+
+
+</RelativeLayout>
